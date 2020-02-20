@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node -r esm app",
+    "build": "docker build -t marshalw/simple-spider-rpi .",
+    "build:rpi": "docker build -t marshalw/simple-spider-rpi -f ./DockerfileRpi .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
