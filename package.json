@@ -19,8 +19,6 @@
     "js-yaml": "^3.13.1",
     "libxmljs": "^0.19.7",
     "simplecrawler": "^1.1.8",
-    "winston": "^3.2.1",
-    "xmldom": "^0.2.1",
-    "xpath": "0.0.27"
+    "winston": "^3.2.1"
   }
 }
