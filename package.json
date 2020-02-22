@@ -16,9 +16,17 @@
   "license": "MIT",
   "dependencies": {
     "esm": "^3.2.25",
+    "html-minifier": "^4.0.0",
     "js-yaml": "^3.13.1",
     "libxmljs": "^0.19.7",
+    "pretty": "^2.0.0",
+    "rfdc": "^1.1.4",
     "simplecrawler": "^1.1.8",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "xml2js": "^0.4.23",
+    "xml2js-xpath": "^0.11.0",
+    "xmldom": "^0.2.1",
+    "xpath": "0.0.27",
+    "xpath.js": "^1.1.0"
   }
 }
