@@ -21,3 +21,4 @@ rules:
       expression: //div[@class="article-entry"]
     - name: updateTime # 更新日期
       expression: //meta[@property="og:updated_time"]/@content
+# allTimeout: !!int 5000 #总的超时
