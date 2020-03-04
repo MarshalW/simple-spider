@@ -9,7 +9,7 @@ maxConcurrency: 10 #同时的请求数
 respectRobotsTxt: false
 # debug: false
 logging:
-  level: info
+  level: debug
 rules:
   fetch:
     - !!js/regexp ^\/page\/(\d*)\/ # 列表分页
