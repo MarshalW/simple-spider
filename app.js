@@ -8,18 +8,15 @@ import { crawl } from './lib/spider'
 const config = yaml.load(fs.readFileSync('./config/spider.yml', 'utf8'))
 
 crawl(config).then(() => {
+    logger.level = config.logging.level
     logger.info({
-        status: {
-            message: 'Spider end.'
-        }
+        status: 'Spider end.'
     })
     process.exit(0)
 })
 
 logger.info({
-    status: {
-        message: 'Spider started.'
-    }
+    status: 'Spider started.'
 })
 
 exitHandler()

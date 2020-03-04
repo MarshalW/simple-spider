@@ -7,7 +7,9 @@ timeout: !!int 10000 #超时
 interval: !!int 500 #请求间隔
 maxConcurrency: 10 #同时的请求数
 respectRobotsTxt: false
-debug: false
+# debug: false
+logging:
+  level: info
 rules:
   fetch:
     - !!js/regexp ^\/page\/(\d*)\/ # 列表分页
