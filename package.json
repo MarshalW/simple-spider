@@ -7,6 +7,7 @@
     "start": "node -r esm app",
     "build": "docker build -t marshalw/simple-spider .",
     "build:rpi": "docker build -t marshalw/simple-spider-rpi -f ./DockerfileRpi .",
+    "push": "docker push marshalw/simple-spider",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
