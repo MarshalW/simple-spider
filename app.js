@@ -5,7 +5,14 @@ import exitHandler from './lib/exit-handler'
 
 import { crawl } from './lib/spider'
 
-const config = yaml.load(fs.readFileSync('./config/spider.yml', 'utf8'))
+let configFilePath = './config/spider.yml'
+
+const args = process.argv.slice(2)
+if (args.length > 0) {
+    configFilePath = args[0]
+}
+
+const config = yaml.load(fs.readFileSync(configFilePath, 'utf8'))
 logger.level = config.logging.level
 
 crawl(config).then(() => {
