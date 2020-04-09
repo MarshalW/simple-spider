@@ -2,7 +2,7 @@
   "name": "simple-spider",
   "version": "0.2.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node -r esm app",
     "build": "docker build -t marshalw/simple-spider .",
@@ -16,10 +16,12 @@
   "author": "marshal",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
     "esm": "^3.2.25",
     "html-minifier": "^4.0.0",
     "html-to-text": "^5.1.1",
     "js-yaml": "^3.13.1",
+    "jsonpath": "^1.0.2",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.28",
     "pretty": "^2.0.0",
