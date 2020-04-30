@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+../node_modules/http-server/bin/http-server ./中国网/要闻/site/

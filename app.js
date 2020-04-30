@@ -4,7 +4,6 @@ import logger from './lib/logger'
 import exitHandler from './lib/exit-handler'
 
 import { crawl } from './lib/spider'
-import extractUrls from './lib/json-extractor'
 
 (async function () {
     let configFilePath = './config/spider.yml'
@@ -16,17 +15,6 @@ import extractUrls from './lib/json-extractor'
     }
 
     const config = yaml.load(fs.readFileSync(configFilePath, 'utf8'))
-    logger.level = config.logging.level
-
-    // 前置处理，针对列表页是json的情况
-    let { jsonUrls, jsonPath } = config
-    if (jsonUrls != null) {
-        let articleUrls = []
-        for (let url of jsonUrls) {
-            articleUrls = [].concat(await extractUrls(url, jsonPath), articleUrls)
-        }
-        config.urls = articleUrls
-    }
 
     // 开始传统的爬虫过程
     crawl(config).then(() => {
