@@ -16,7 +16,7 @@
   "author": "marshal",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "esm": "^3.2.25",
     "html-minifier": "^4.0.0",
     "html-to-text": "^5.1.1",
